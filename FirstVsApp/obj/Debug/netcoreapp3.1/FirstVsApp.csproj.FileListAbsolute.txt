@@ -1,0 +1,13 @@
+D:\Accenture\Dotnet\Day1\FirstVsApp\bin\Debug\netcoreapp3.1\FirstVsApp.exe
+D:\Accenture\Dotnet\Day1\FirstVsApp\bin\Debug\netcoreapp3.1\FirstVsApp.deps.json
+D:\Accenture\Dotnet\Day1\FirstVsApp\bin\Debug\netcoreapp3.1\FirstVsApp.runtimeconfig.json
+D:\Accenture\Dotnet\Day1\FirstVsApp\bin\Debug\netcoreapp3.1\FirstVsApp.runtimeconfig.dev.json
+D:\Accenture\Dotnet\Day1\FirstVsApp\bin\Debug\netcoreapp3.1\FirstVsApp.dll
+D:\Accenture\Dotnet\Day1\FirstVsApp\bin\Debug\netcoreapp3.1\FirstVsApp.pdb
+D:\Accenture\Dotnet\Day1\FirstVsApp\obj\Debug\netcoreapp3.1\FirstVsApp.csproj.AssemblyReference.cache
+D:\Accenture\Dotnet\Day1\FirstVsApp\obj\Debug\netcoreapp3.1\FirstVsApp.AssemblyInfoInputs.cache
+D:\Accenture\Dotnet\Day1\FirstVsApp\obj\Debug\netcoreapp3.1\FirstVsApp.AssemblyInfo.cs
+D:\Accenture\Dotnet\Day1\FirstVsApp\obj\Debug\netcoreapp3.1\FirstVsApp.csproj.CoreCompileInputs.cache
+D:\Accenture\Dotnet\Day1\FirstVsApp\obj\Debug\netcoreapp3.1\FirstVsApp.dll
+D:\Accenture\Dotnet\Day1\FirstVsApp\obj\Debug\netcoreapp3.1\FirstVsApp.pdb
+D:\Accenture\Dotnet\Day1\FirstVsApp\obj\Debug\netcoreapp3.1\FirstVsApp.genruntimeconfig.cache
