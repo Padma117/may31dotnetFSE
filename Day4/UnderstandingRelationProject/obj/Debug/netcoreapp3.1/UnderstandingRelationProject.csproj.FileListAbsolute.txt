@@ -1,0 +1,13 @@
+C:\DotNet\Day4\UnderstandingRelationProject\obj\Debug\netcoreapp3.1\UnderstandingRelationProject.csproj.AssemblyReference.cache
+C:\DotNet\Day4\UnderstandingRelationProject\obj\Debug\netcoreapp3.1\UnderstandingRelationProject.AssemblyInfoInputs.cache
+C:\DotNet\Day4\UnderstandingRelationProject\obj\Debug\netcoreapp3.1\UnderstandingRelationProject.AssemblyInfo.cs
+C:\DotNet\Day4\UnderstandingRelationProject\obj\Debug\netcoreapp3.1\UnderstandingRelationProject.csproj.CoreCompileInputs.cache
+C:\DotNet\Day4\UnderstandingRelationProject\bin\Debug\netcoreapp3.1\UnderstandingRelationProject.exe
+C:\DotNet\Day4\UnderstandingRelationProject\bin\Debug\netcoreapp3.1\UnderstandingRelationProject.deps.json
+C:\DotNet\Day4\UnderstandingRelationProject\bin\Debug\netcoreapp3.1\UnderstandingRelationProject.runtimeconfig.json
+C:\DotNet\Day4\UnderstandingRelationProject\bin\Debug\netcoreapp3.1\UnderstandingRelationProject.runtimeconfig.dev.json
+C:\DotNet\Day4\UnderstandingRelationProject\bin\Debug\netcoreapp3.1\UnderstandingRelationProject.dll
+C:\DotNet\Day4\UnderstandingRelationProject\bin\Debug\netcoreapp3.1\UnderstandingRelationProject.pdb
+C:\DotNet\Day4\UnderstandingRelationProject\obj\Debug\netcoreapp3.1\UnderstandingRelationProject.dll
+C:\DotNet\Day4\UnderstandingRelationProject\obj\Debug\netcoreapp3.1\UnderstandingRelationProject.pdb
+C:\DotNet\Day4\UnderstandingRelationProject\obj\Debug\netcoreapp3.1\UnderstandingRelationProject.genruntimeconfig.cache

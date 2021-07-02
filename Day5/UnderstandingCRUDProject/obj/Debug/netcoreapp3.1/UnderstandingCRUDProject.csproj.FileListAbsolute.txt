@@ -1,0 +1,13 @@
+C:\DotNet\Day5\UnderstandingCRUDProject\bin\Debug\netcoreapp3.1\UnderstandingCRUDProject.exe
+C:\DotNet\Day5\UnderstandingCRUDProject\bin\Debug\netcoreapp3.1\UnderstandingCRUDProject.deps.json
+C:\DotNet\Day5\UnderstandingCRUDProject\bin\Debug\netcoreapp3.1\UnderstandingCRUDProject.runtimeconfig.json
+C:\DotNet\Day5\UnderstandingCRUDProject\bin\Debug\netcoreapp3.1\UnderstandingCRUDProject.runtimeconfig.dev.json
+C:\DotNet\Day5\UnderstandingCRUDProject\bin\Debug\netcoreapp3.1\UnderstandingCRUDProject.dll
+C:\DotNet\Day5\UnderstandingCRUDProject\bin\Debug\netcoreapp3.1\UnderstandingCRUDProject.pdb
+C:\DotNet\Day5\UnderstandingCRUDProject\obj\Debug\netcoreapp3.1\UnderstandingCRUDProject.csproj.AssemblyReference.cache
+C:\DotNet\Day5\UnderstandingCRUDProject\obj\Debug\netcoreapp3.1\UnderstandingCRUDProject.AssemblyInfoInputs.cache
+C:\DotNet\Day5\UnderstandingCRUDProject\obj\Debug\netcoreapp3.1\UnderstandingCRUDProject.AssemblyInfo.cs
+C:\DotNet\Day5\UnderstandingCRUDProject\obj\Debug\netcoreapp3.1\UnderstandingCRUDProject.csproj.CoreCompileInputs.cache
+C:\DotNet\Day5\UnderstandingCRUDProject\obj\Debug\netcoreapp3.1\UnderstandingCRUDProject.dll
+C:\DotNet\Day5\UnderstandingCRUDProject\obj\Debug\netcoreapp3.1\UnderstandingCRUDProject.pdb
+C:\DotNet\Day5\UnderstandingCRUDProject\obj\Debug\netcoreapp3.1\UnderstandingCRUDProject.genruntimeconfig.cache

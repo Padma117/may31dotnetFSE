@@ -1,0 +1,85 @@
+﻿@model IEnumerable<OnlineMovieTicketBookingApp.Models.Ticket>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ticket_number)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ticket_price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.hall_number)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.seat_number)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.show_datetime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.show_id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.seat_id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.hall_id)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ticket_number)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ticket_price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.hall_number)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.seat_number)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.show_datetime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.show_id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.seat_id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.hall_id)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ticket_id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ticket_id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ticket_id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+</body>
+</html>

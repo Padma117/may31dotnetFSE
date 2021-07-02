@@ -1,0 +1,13 @@
+C:\DotNet\Day3\UnderstandingOOPSProject\bin\Debug\netcoreapp3.1\UnderstandingOOPSProject.exe
+C:\DotNet\Day3\UnderstandingOOPSProject\bin\Debug\netcoreapp3.1\UnderstandingOOPSProject.deps.json
+C:\DotNet\Day3\UnderstandingOOPSProject\bin\Debug\netcoreapp3.1\UnderstandingOOPSProject.runtimeconfig.json
+C:\DotNet\Day3\UnderstandingOOPSProject\bin\Debug\netcoreapp3.1\UnderstandingOOPSProject.runtimeconfig.dev.json
+C:\DotNet\Day3\UnderstandingOOPSProject\bin\Debug\netcoreapp3.1\UnderstandingOOPSProject.dll
+C:\DotNet\Day3\UnderstandingOOPSProject\bin\Debug\netcoreapp3.1\UnderstandingOOPSProject.pdb
+C:\DotNet\Day3\UnderstandingOOPSProject\obj\Debug\netcoreapp3.1\UnderstandingOOPSProject.csproj.AssemblyReference.cache
+C:\DotNet\Day3\UnderstandingOOPSProject\obj\Debug\netcoreapp3.1\UnderstandingOOPSProject.AssemblyInfoInputs.cache
+C:\DotNet\Day3\UnderstandingOOPSProject\obj\Debug\netcoreapp3.1\UnderstandingOOPSProject.AssemblyInfo.cs
+C:\DotNet\Day3\UnderstandingOOPSProject\obj\Debug\netcoreapp3.1\UnderstandingOOPSProject.csproj.CoreCompileInputs.cache
+C:\DotNet\Day3\UnderstandingOOPSProject\obj\Debug\netcoreapp3.1\UnderstandingOOPSProject.dll
+C:\DotNet\Day3\UnderstandingOOPSProject\obj\Debug\netcoreapp3.1\UnderstandingOOPSProject.pdb
+C:\DotNet\Day3\UnderstandingOOPSProject\obj\Debug\netcoreapp3.1\UnderstandingOOPSProject.genruntimeconfig.cache

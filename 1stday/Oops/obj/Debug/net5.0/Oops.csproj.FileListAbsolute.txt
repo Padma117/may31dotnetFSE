@@ -1,0 +1,16 @@
+C:\DotNet\1stday\Oops\bin\Debug\net5.0\Oops.exe
+C:\DotNet\1stday\Oops\bin\Debug\net5.0\Oops.deps.json
+C:\DotNet\1stday\Oops\bin\Debug\net5.0\Oops.runtimeconfig.json
+C:\DotNet\1stday\Oops\bin\Debug\net5.0\Oops.runtimeconfig.dev.json
+C:\DotNet\1stday\Oops\bin\Debug\net5.0\Oops.dll
+C:\DotNet\1stday\Oops\bin\Debug\net5.0\ref\Oops.dll
+C:\DotNet\1stday\Oops\bin\Debug\net5.0\Oops.pdb
+C:\DotNet\1stday\Oops\obj\Debug\net5.0\Oops.csproj.AssemblyReference.cache
+C:\DotNet\1stday\Oops\obj\Debug\net5.0\Oops.GeneratedMSBuildEditorConfig.editorconfig
+C:\DotNet\1stday\Oops\obj\Debug\net5.0\Oops.AssemblyInfoInputs.cache
+C:\DotNet\1stday\Oops\obj\Debug\net5.0\Oops.AssemblyInfo.cs
+C:\DotNet\1stday\Oops\obj\Debug\net5.0\Oops.csproj.CoreCompileInputs.cache
+C:\DotNet\1stday\Oops\obj\Debug\net5.0\Oops.dll
+C:\DotNet\1stday\Oops\obj\Debug\net5.0\ref\Oops.dll
+C:\DotNet\1stday\Oops\obj\Debug\net5.0\Oops.pdb
+C:\DotNet\1stday\Oops\obj\Debug\net5.0\Oops.genruntimeconfig.cache

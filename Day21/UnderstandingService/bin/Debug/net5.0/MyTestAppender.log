@@ -1,0 +1,5 @@
+﻿2021-06-29 12:24:17,123 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-06-29 12:24:18,019 ERROR [8] UnderstandingService.Controllers.HomeController.Index - Denominator is 029 Jun 2021 12:24:17 PM
+2021-06-29 12:24:18,061 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Production
+2021-06-29 12:24:18,104 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: C:\DotNet\Day21\UnderstandingService
+2021-06-29 12:25:03,325 INFO [10] UnderstandingService.Services.ProductRepo.Add - Product added

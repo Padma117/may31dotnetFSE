@@ -1,0 +1,13 @@
+C:\DotNet\Day3\UnderstandingArraysProject\bin\Debug\netcoreapp3.1\UnderstandingArraysProject.exe
+C:\DotNet\Day3\UnderstandingArraysProject\bin\Debug\netcoreapp3.1\UnderstandingArraysProject.deps.json
+C:\DotNet\Day3\UnderstandingArraysProject\bin\Debug\netcoreapp3.1\UnderstandingArraysProject.runtimeconfig.json
+C:\DotNet\Day3\UnderstandingArraysProject\bin\Debug\netcoreapp3.1\UnderstandingArraysProject.runtimeconfig.dev.json
+C:\DotNet\Day3\UnderstandingArraysProject\bin\Debug\netcoreapp3.1\UnderstandingArraysProject.dll
+C:\DotNet\Day3\UnderstandingArraysProject\bin\Debug\netcoreapp3.1\UnderstandingArraysProject.pdb
+C:\DotNet\Day3\UnderstandingArraysProject\obj\Debug\netcoreapp3.1\UnderstandingArraysProject.csproj.AssemblyReference.cache
+C:\DotNet\Day3\UnderstandingArraysProject\obj\Debug\netcoreapp3.1\UnderstandingArraysProject.AssemblyInfoInputs.cache
+C:\DotNet\Day3\UnderstandingArraysProject\obj\Debug\netcoreapp3.1\UnderstandingArraysProject.AssemblyInfo.cs
+C:\DotNet\Day3\UnderstandingArraysProject\obj\Debug\netcoreapp3.1\UnderstandingArraysProject.csproj.CoreCompileInputs.cache
+C:\DotNet\Day3\UnderstandingArraysProject\obj\Debug\netcoreapp3.1\UnderstandingArraysProject.dll
+C:\DotNet\Day3\UnderstandingArraysProject\obj\Debug\netcoreapp3.1\UnderstandingArraysProject.pdb
+C:\DotNet\Day3\UnderstandingArraysProject\obj\Debug\netcoreapp3.1\UnderstandingArraysProject.genruntimeconfig.cache

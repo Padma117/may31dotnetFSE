@@ -1,0 +1,13 @@
+C:\DotNet\1stday\DoWhile\obj\Debug\netcoreapp3.1\DoWhile.csproj.AssemblyReference.cache
+C:\DotNet\1stday\DoWhile\obj\Debug\netcoreapp3.1\DoWhile.AssemblyInfoInputs.cache
+C:\DotNet\1stday\DoWhile\obj\Debug\netcoreapp3.1\DoWhile.AssemblyInfo.cs
+C:\DotNet\1stday\DoWhile\obj\Debug\netcoreapp3.1\DoWhile.csproj.CoreCompileInputs.cache
+C:\DotNet\1stday\DoWhile\bin\Debug\netcoreapp3.1\DoWhile.exe
+C:\DotNet\1stday\DoWhile\bin\Debug\netcoreapp3.1\DoWhile.deps.json
+C:\DotNet\1stday\DoWhile\bin\Debug\netcoreapp3.1\DoWhile.runtimeconfig.json
+C:\DotNet\1stday\DoWhile\bin\Debug\netcoreapp3.1\DoWhile.runtimeconfig.dev.json
+C:\DotNet\1stday\DoWhile\bin\Debug\netcoreapp3.1\DoWhile.dll
+C:\DotNet\1stday\DoWhile\bin\Debug\netcoreapp3.1\DoWhile.pdb
+C:\DotNet\1stday\DoWhile\obj\Debug\netcoreapp3.1\DoWhile.dll
+C:\DotNet\1stday\DoWhile\obj\Debug\netcoreapp3.1\DoWhile.pdb
+C:\DotNet\1stday\DoWhile\obj\Debug\netcoreapp3.1\DoWhile.genruntimeconfig.cache
