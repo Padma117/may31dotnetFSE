@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using OnlineMovieTicketBookingApp.Models;
 
 namespace OnlineMovieTicketBookingApp.Migrations
 {
     [DbContext(typeof(CinemaContext))]
-    partial class CinemaContextModelSnapshot : ModelSnapshot
+    [Migration("20210702042936_Ini1")]
+    partial class Ini1
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -471,9 +473,6 @@ namespace OnlineMovieTicketBookingApp.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<int>("customer_id")
-                        .HasColumnType("int");
 
                     b.Property<int>("hall_id")
                         .HasColumnType("int");

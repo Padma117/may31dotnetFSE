@@ -331,3 +331,5 @@ C:\DotNet\OnlineMovieTicketBookingApplication-master\OnlineMovieTicketBookingApp
 C:\DotNet\OnlineMovieTicketBookingApplication-master\OnlineMovieTicketBookingApp\obj\Debug\net5.0\OnlineMovieTicketBookingApp.pdb
 C:\DotNet\OnlineMovieTicketBookingApplication-master\OnlineMovieTicketBookingApp\obj\Debug\net5.0\OnlineMovieTicketBookingApp.genruntimeconfig.cache
 C:\DotNet\OnlineMovieTicketBookingApplication-master\OnlineMovieTicketBookingApp\obj\Debug\net5.0\Razor\Views\Ticket\Index.cshtml.g.cs
+C:\DotNet\OnlineMovieTicketBookingApplication-master\OnlineMovieTicketBookingApp\obj\Debug\net5.0\Razor\Views\Shared\_Tickets.cshtml.g.cs
+C:\DotNet\OnlineMovieTicketBookingApplication-master\OnlineMovieTicketBookingApp\obj\Debug\net5.0\Razor\Views\Ticket\Details.cshtml.g.cs

@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace OnlineMovieTicketBookingApp.Migrations
 {
-    public partial class Movie01Jul : Migration
+    public partial class Ini1 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

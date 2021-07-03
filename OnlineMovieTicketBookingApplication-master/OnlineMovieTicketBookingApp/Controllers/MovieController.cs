@@ -50,34 +50,34 @@ namespace OnlineMovieTicketBookingApp.Controllers
 
         [HttpPost]
         //public async Task<IActionResult> Create(Movie movie)
-        public IActionResult Create(Movie movie)
+        public async Task<IActionResult> CreateAsync(Movie movie)
         {
             try
             {
                 if (ModelState.IsValid)
                 {
                     Movie myMovie = movie;
-                    //if (movie.Poster_File != null)
-                    //{
-                    //    try
-                    //    {
-                    //        string folder = "/MoviePosters";
-                    //        folder += Guid.NewGuid().ToString() + myMovie.Poster_File.FileName;
-                    //        string serverFolder = Path.Combine(_webHostEnvironment.WebRootPath, folder);
+                    if (movie.Poster_File != null)
+                    {
+                        try
+                        {
+                            string folder = "/MoviePosters";
+                            folder += Guid.NewGuid().ToString() + myMovie.Poster_File.FileName;
+                            string serverFolder = Path.Combine(_webHostEnvironment.WebRootPath, folder);
 
-                    //        await myMovie.Poster_File.CopyToAsync(new FileStream(serverFolder, FileMode.Create));
-                    //        ViewBag.Message = "File uploaded successfully";
+                            await myMovie.Poster_File.CopyToAsync(new FileStream(serverFolder, FileMode.Create));
+                            ViewBag.Message = "File uploaded successfully";
 
-                    //    }
-                    //    catch (Exception ex)
-                    //    {
-                    //        ViewBag.Message = "ERROR:" + ex.Message.ToString();
-                    //    }
-                    //}
-                    //else
-                    //{
-                    //    ViewBag.Message = "You have not specified a file.";
-                    //}
+                        }
+                        catch (Exception ex)
+                        {
+                            ViewBag.Message = "ERROR:" + ex.Message.ToString();
+                        }
+                    }
+                    else
+                    {
+                        ViewBag.Message = "You have not specified a file.";
+                    }
 
 
                     movie.Id = _repo.Add(myMovie);

@@ -87,9 +87,15 @@ namespace OnlineMovieTicketBookingApp.Services
             return null;
         }
 
+       
         public ICollection<Ticket> GetAll()
         {
-            throw new NotImplementedException();
+
+            if (_context.Tickets.Count() == 0)
+            {
+                return null;
+            }
+            return _context.Tickets.ToList();
         }
     }
 }

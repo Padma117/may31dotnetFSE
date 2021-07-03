@@ -10,8 +10,8 @@ using OnlineMovieTicketBookingApp.Models;
 namespace OnlineMovieTicketBookingApp.Migrations
 {
     [DbContext(typeof(CinemaContext))]
-    [Migration("20210701105347_Movie01Jul")]
-    partial class Movie01Jul
+    [Migration("20210703103749_ini12345")]
+    partial class ini12345
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -473,6 +473,9 @@ namespace OnlineMovieTicketBookingApp.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("customer_id")
+                        .HasColumnType("int");
 
                     b.Property<int>("hall_id")
                         .HasColumnType("int");

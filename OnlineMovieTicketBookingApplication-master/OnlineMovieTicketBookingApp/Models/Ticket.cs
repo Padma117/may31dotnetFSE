@@ -11,8 +11,11 @@ namespace OnlineMovieTicketBookingApp.Models
         [Key]
         public int ticket_id { get; set; }
 
-        [Required(ErrorMessage = "Ticket ID is required.")]
+        [Required(ErrorMessage = "Ticket Numer is required.")]
         public int ticket_number { get; set; }
+
+        [Required(ErrorMessage = "Customer ID is required.")]
+        public int customer_id { get; set; }
 
         [Required(ErrorMessage = "Ticket Price is required.")]
         public double ticket_price { get; set; }
