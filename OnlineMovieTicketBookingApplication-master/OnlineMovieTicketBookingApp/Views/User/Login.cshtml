@@ -1,68 +1,118 @@
-﻿@model OnlineMovieTicketBookingApp.Models.User
+﻿@*@model OnlineMovieTicketBookingApp.Models.User
+    @{
+        ViewData["Title"] = "Login";
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+    <!DOCTYPE html>
+    <style>
+        .heading {
+            text-align: center;
+            position: relative;
+            top: 80px;
+        }
+        section {
+            left: 435px;
+            position: relative;
+            top: 100px;
+        }
+        .actionlink{
+            position:center;
+            font-size:small;
+        }
+        .alert {
+            text-align:center;
+            width:500px;
+            left:400px;
+            top: 50px;
+        }
+    </style>
+    <div>
+        <p class="alert alert-primary">@ViewBag.Message</p>
+    </div>
+    <div class="heading">
+        <h4>Login</h4>
+    </div>
+    <section>
+        <div class="row">
+            <div class="col-md-4">
+                @using (Html.BeginForm("Login", "User", FormMethod.Post))
+                {
+                    @Html.LabelFor(m => m.Username, htmlAttributes: new { @class = "form-control" })
+                    @Html.EditorFor(m => m.Username, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(m => m.Username, "", new { @class = "text-danger" })
+                    @Html.LabelFor(m => m.Password, htmlAttributes: new { @class = "form-control" })
+                    @Html.PasswordFor(m => m.Password, htmlAttributes: new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                <br />
+                    <input type="submit" class="btn btn-light" value="Login" />
+                    <br/>
+                    <br />
+                    @Html.ActionLink("New User? Click here to register.", "Register", null, new { @class = "actionlink" })
+                    <br />
+                }
+            </div>
+        </div>
+    </section>*@
 
-@{
-    ViewData["Title"] = "Login";
-    Layout = "~/Views/Shared/_Layout.cshtml";
-}
+@model OnlineMovieTicketBookingApp.Models.User
 
-<!DOCTYPE html>
+@{ ViewData["Title"] = "User Login";
+    Layout = "~/Views/Shared/_Layout.cshtml"; }
 
 <style>
     .heading {
         text-align: center;
-        position: relative;
-        top: 80px;
+        padding-top: 80px;
     }
 
-    section {
-        left: 435px;
-        position: relative;
-        top: 100px;
-        
+    .actionlink {
+        position: center;
+        font-size: small;
     }
-    .actionlink{
-        position:center;
-        font-size:small;
-    }
+
     .alert {
-        text-align:center;
-        width:500px;
-        left:400px;
+        text-align: center;
+        width: 500px;
+        left: 400px;
         top: 50px;
     }
-    
 </style>
 
-<div>
-    <p class="alert alert-primary">@ViewBag.Message</p>
-</div>
+@if (ViewBag.Message != null)
+{
+    <div>
+        <p class="alert alert-primary">@ViewBag.Message</p>
+    </div>}
 
-<div class="heading">
-    <h4>Login</h4>
-</div>
-<section>
-    <div class="row">
+
+<div class="container">
+    <div class="row justify-content-md-center">
         <div class="col-md-4">
+
+            <div class="heading">
+                <h4>Login</h4>
+            </div>
+
             @using (Html.BeginForm("Login", "User", FormMethod.Post))
             {
-                @Html.LabelFor(m => m.Username, htmlAttributes: new { @class = "form-control" })
-                @Html.EditorFor(m => m.Username, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(m => m.Username, "", new { @class = "text-danger" })
-                @Html.LabelFor(m => m.Password, htmlAttributes: new { @class = "form-control" })
-                @Html.PasswordFor(m => m.Password, htmlAttributes: new { @class = "form-control" })
-                @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
-            <br />
-                <input type="submit" class="btn btn-light" value="Login" />
-                <br/>
+                <div>
+                    @Html.LabelFor(m => m.Username)
+                    @Html.EditorFor(m => m.Username, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(m => m.Username, "", new { @class = "text-danger" })
+
+                </div>
+                <div>
+                    @Html.LabelFor(m => m.Password)
+                    @Html.PasswordFor(m => m.Password, htmlAttributes: new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                </div>
                 <br />
-                @Html.ActionLink("New User? Click here to register.", "Register", null, new { @class = "actionlink" })
-                <br />
-                
-            }
+                <input type="submit" class="btn btn-secondary" value="Login" />}
+
+            @Html.ActionLink("New User? Click here to register.", "Register", null, new { @class = "actionlink" })
+
         </div>
     </div>
-</section>
+</div>
 
 
-
-   

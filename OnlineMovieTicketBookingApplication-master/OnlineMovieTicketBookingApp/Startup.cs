@@ -32,7 +32,10 @@ namespace OnlineMovieTicketBookingApp
             services.AddMvc();
             services.AddScoped<IRepo<Movie, int>, MovieRepo>();
             services.AddScoped<IRepo<Show, int>, ShowRepo>();
+            services.AddScoped<IRepo<int, User>, AdminRepo>();
             services.AddScoped<IRepo<Ticket, int>, TicketRepo>();
+            services.AddScoped<IRepo<Customer, int>, UserRepo>();
+            services.AddScoped<IRepo<BookingDetail, int>, BookingDetailRepo>();
             services.AddDbContext<CinemaContext>(options => options.UseSqlServer(Configuration["ConnectionStrings:cinemaCon"]));
         }
 

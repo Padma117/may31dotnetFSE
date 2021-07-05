@@ -78,6 +78,44 @@ namespace OnlineMovieTicketBookingApp.Migrations
                         });
                 });
 
+            modelBuilder.Entity("OnlineMovieTicketBookingApp.Models.BookingDetail", b =>
+                {
+                    b.Property<int>("booking_id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("Order_Date_And_Time")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("Ticket_Id")
+                        .HasColumnType("int");
+
+                    b.Property<string>("booking_status")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("booking_totalamount")
+                        .HasColumnType("int");
+
+                    b.Property<int>("customer_id")
+                        .HasColumnType("int");
+
+                    b.Property<int>("seat_number")
+                        .HasColumnType("int");
+
+                    b.Property<int>("show_id")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ticket_qty")
+                        .HasColumnType("int");
+
+                    b.HasKey("booking_id");
+
+                    b.HasIndex("Ticket_Id");
+
+                    b.ToTable("BookingDetails");
+                });
+
             modelBuilder.Entity("OnlineMovieTicketBookingApp.Models.Customer", b =>
                 {
                     b.Property<int>("Id")
@@ -493,13 +531,14 @@ namespace OnlineMovieTicketBookingApp.Migrations
                     b.Property<int>("show_id")
                         .HasColumnType("int");
 
-                    b.Property<int>("ticket_number")
-                        .HasColumnType("int");
-
                     b.Property<double>("ticket_price")
                         .HasColumnType("float");
 
                     b.HasKey("ticket_id");
+
+                    b.HasIndex("customer_id");
+
+                    b.HasIndex("show_id");
 
                     b.ToTable("Tickets");
                 });
@@ -516,6 +555,17 @@ namespace OnlineMovieTicketBookingApp.Migrations
                     b.HasKey("Username");
 
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("OnlineMovieTicketBookingApp.Models.BookingDetail", b =>
+                {
+                    b.HasOne("OnlineMovieTicketBookingApp.Models.Ticket", "ticket")
+                        .WithMany()
+                        .HasForeignKey("Ticket_Id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("ticket");
                 });
 
             modelBuilder.Entity("OnlineMovieTicketBookingApp.Models.Show", b =>
@@ -535,6 +585,25 @@ namespace OnlineMovieTicketBookingApp.Migrations
                     b.Navigation("Hall");
 
                     b.Navigation("Movie");
+                });
+
+            modelBuilder.Entity("OnlineMovieTicketBookingApp.Models.Ticket", b =>
+                {
+                    b.HasOne("OnlineMovieTicketBookingApp.Models.Customer", "customer")
+                        .WithMany()
+                        .HasForeignKey("customer_id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("OnlineMovieTicketBookingApp.Models.Show", "show")
+                        .WithMany()
+                        .HasForeignKey("show_id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("customer");
+
+                    b.Navigation("show");
                 });
 
             modelBuilder.Entity("OnlineMovieTicketBookingApp.Models.Movie", b =>

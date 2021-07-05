@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace OnlineMovieTicketBookingApp.Models
 {
-    public class CustomerViewModel : Customer
+    public class CustomerViewModel : Customer 
     {
         [Required(ErrorMessage ="Password is required")]
         [Display(Name = "Password")]

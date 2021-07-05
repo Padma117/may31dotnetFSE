@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace OnlineMovieTicketBookingApp.Migrations
 {
-    public partial class Ini1 : Migration
+    public partial class initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -90,26 +90,6 @@ namespace OnlineMovieTicketBookingApp.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Tickets",
-                columns: table => new
-                {
-                    ticket_id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    ticket_number = table.Column<int>(type: "int", nullable: false),
-                    ticket_price = table.Column<double>(type: "float", nullable: false),
-                    hall_number = table.Column<int>(type: "int", nullable: false),
-                    seat_number = table.Column<int>(type: "int", nullable: false),
-                    show_datetime = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    show_id = table.Column<int>(type: "int", nullable: false),
-                    seat_id = table.Column<int>(type: "int", nullable: false),
-                    hall_id = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Tickets", x => x.ticket_id);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Users",
                 columns: table => new
                 {
@@ -145,6 +125,64 @@ namespace OnlineMovieTicketBookingApp.Migrations
                         column: x => x.Movie_Id,
                         principalTable: "Movies",
                         principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Tickets",
+                columns: table => new
+                {
+                    ticket_id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    customer_id = table.Column<int>(type: "int", nullable: false),
+                    ticket_price = table.Column<double>(type: "float", nullable: false),
+                    hall_number = table.Column<int>(type: "int", nullable: false),
+                    seat_number = table.Column<int>(type: "int", nullable: false),
+                    show_datetime = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    show_id = table.Column<int>(type: "int", nullable: false),
+                    seat_id = table.Column<int>(type: "int", nullable: false),
+                    hall_id = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Tickets", x => x.ticket_id);
+                    table.ForeignKey(
+                        name: "FK_Tickets_Customers_customer_id",
+                        column: x => x.customer_id,
+                        principalTable: "Customers",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_Tickets_Shows_show_id",
+                        column: x => x.show_id,
+                        principalTable: "Shows",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "BookingDetails",
+                columns: table => new
+                {
+                    booking_id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    customer_id = table.Column<int>(type: "int", nullable: false),
+                    Order_Date_And_Time = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    booking_status = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    booking_totalamount = table.Column<int>(type: "int", nullable: false),
+                    seat_number = table.Column<int>(type: "int", nullable: false),
+                    Ticket_Id = table.Column<int>(type: "int", nullable: false),
+                    show_id = table.Column<int>(type: "int", nullable: false),
+                    ticket_qty = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_BookingDetails", x => x.booking_id);
+                    table.ForeignKey(
+                        name: "FK_BookingDetails_Tickets_Ticket_Id",
+                        column: x => x.Ticket_Id,
+                        principalTable: "Tickets",
+                        principalColumn: "ticket_id",
                         onDelete: ReferentialAction.Cascade);
                 });
 
@@ -198,6 +236,11 @@ namespace OnlineMovieTicketBookingApp.Migrations
                 });
 
             migrationBuilder.CreateIndex(
+                name: "IX_BookingDetails_Ticket_Id",
+                table: "BookingDetails",
+                column: "Ticket_Id");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Shows_Hall_Id",
                 table: "Shows",
                 column: "Hall_Id");
@@ -206,6 +249,16 @@ namespace OnlineMovieTicketBookingApp.Migrations
                 name: "IX_Shows_Movie_Id",
                 table: "Shows",
                 column: "Movie_Id");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Tickets_customer_id",
+                table: "Tickets",
+                column: "customer_id");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Tickets_show_id",
+                table: "Tickets",
+                column: "show_id");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -214,16 +267,19 @@ namespace OnlineMovieTicketBookingApp.Migrations
                 name: "Admins");
 
             migrationBuilder.DropTable(
-                name: "Customers");
+                name: "BookingDetails");
 
             migrationBuilder.DropTable(
-                name: "Shows");
+                name: "Users");
 
             migrationBuilder.DropTable(
                 name: "Tickets");
 
             migrationBuilder.DropTable(
-                name: "Users");
+                name: "Customers");
+
+            migrationBuilder.DropTable(
+                name: "Shows");
 
             migrationBuilder.DropTable(
                 name: "Halls");

@@ -1,0 +1,38 @@
+﻿@model IEnumerable<OnlineMovieTicketBookingApp.Models.BookingDetail>
+
+
+@{ ViewData["Title"] = "Booking Details";
+    Layout = "~/Views/Shared/_Layout.cshtml"; }
+<br />
+<br />
+
+@if (Model != null)
+{
+
+@foreach (var item in Model)
+{
+    if ((int)TempData.Peek("CustomerId") == item.customer_id)
+    
+
+    {
+        <div class="card" style="width: 18rem;">
+       <div class="card-body">
+        <h5 class="card-title"><b>Hall Number @item.booking_id</b></h5>
+        <h6 class="card-text"><i> Status  (@item.booking_status)</i></h6>
+        <p class="card-text">
+            <br />
+            Booked Time  @item.Order_Date_And_Time
+            <br />
+        </p>
+        <a href='@Url.Action("Details", "Ticket", new { id = item.Ticket_Id })'>
+            <input type='button' class="btn btn-warning" value='View Details' />
+        </a>
+        </div>
+        </div>
+    }
+
+} 
+}
+            else
+            {
+<h1> No Booking details found</h1>}

@@ -23,6 +23,10 @@ namespace OnlineMovieTicketBookingApp.Models
         
         public DbSet<Ticket>Tickets { get; set; }
 
+        public DbSet<BookingDetail> BookingDetails { get; set; }
+
+
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
