@@ -336,3 +336,4 @@ C:\DotNet\OnlineMovieTicketBookingApplication-master\OnlineMovieTicketBookingApp
 C:\DotNet\OnlineMovieTicketBookingApplication-master\OnlineMovieTicketBookingApp\obj\Debug\net5.0\Razor\Views\User\Edit.cshtml.g.cs
 C:\DotNet\OnlineMovieTicketBookingApplication-master\OnlineMovieTicketBookingApp\obj\Debug\net5.0\Razor\Views\User\Index.cshtml.g.cs
 C:\DotNet\OnlineMovieTicketBookingApplication-master\OnlineMovieTicketBookingApp\obj\Debug\net5.0\Razor\Views\BookingDetail\index.cshtml.g.cs
+C:\DotNet\OnlineMovieTicketBookingApplication-master\OnlineMovieTicketBookingApp\obj\Debug\net5.0\Razor\Views\BookingDetail\Create.cshtml.g.cs

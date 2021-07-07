@@ -23,7 +23,10 @@
                 <br />
                 @item.Run_Time minutes
             </p>
-            <button class="btn btn-warning">Buy Tickets</button>
+            <a href='@Url.Action("Create", "BookingDetail" , new { id = item.Id } )'>
+                <input type='button' class="btn btn-warning" value='Buy Tickets' />
+            </a>
+            
         </div>
     </div>
 
